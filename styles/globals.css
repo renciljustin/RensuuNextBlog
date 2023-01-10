@@ -3,8 +3,8 @@
 :root {
   --bg-color: #2b2b2b;
   --text-color: #fff;
-  --primary-color: #fa8219;
-  --link-color: #c244c2;
+  --primary-color: #c244c2;
+  --link-color: #888;
 }
 
 * {

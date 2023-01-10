@@ -1,0 +1,18 @@
+.profilePhoto {
+  display: block;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.greetings {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .profilePhoto {
+    margin-top: 6rem;
+  }
+  .typewriter > div {
+    display: inline;
+  }
+}
