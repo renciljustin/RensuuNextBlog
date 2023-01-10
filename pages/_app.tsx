@@ -4,6 +4,7 @@ import Layout from '../components/layouts/Layout';
 import localFont from '@next/font/local';
 import NavigationBar from '../components/layouts/NavigationBar';
 
+// TODO: Try to apply the NEXT way of configuring custom fonts.
 // const inter = localFont({
 //   src: [
 //     {

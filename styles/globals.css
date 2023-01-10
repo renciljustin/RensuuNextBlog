@@ -4,6 +4,7 @@
   --bg-color: #2b2b2b;
   --text-color: #fff;
   --primary-color: #fa8219;
+  --link-color: #c244c2;
 }
 
 * {
@@ -84,6 +85,7 @@ h3 {
 h4 {
   font-size: 28px;
 }
+
 h5 {
   font-size: 24px;
 }
