@@ -22,8 +22,8 @@ export default function Hero() {
         <Image
           src={'/images/profile.jpg'}
           alt={'My profile'}
-          height={200}
-          width={200}
+          height={300}
+          width={300}
           className={classes.profilePhoto}
         />
         <div className={classes.circles}>

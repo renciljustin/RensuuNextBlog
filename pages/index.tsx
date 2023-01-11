@@ -1,5 +1,12 @@
+import { Fragment } from 'react';
 import Hero from '../components/home/Hero';
+import Introduction from '../components/home/Introduction';
 
 export default function HomePage() {
-  return <Hero />;
+  return (
+    <Fragment>
+      <Hero />
+      <Introduction />
+    </Fragment>
+  );
 }
