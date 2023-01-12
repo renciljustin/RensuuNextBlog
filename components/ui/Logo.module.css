@@ -1,0 +1,10 @@
+.logo {
+  color: var(--primary-color);
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}

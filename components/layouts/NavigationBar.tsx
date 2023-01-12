@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Logo from '../ui/Logo';
 import Container from './Container';
 import classes from './NavigationBar.module.css';
 
@@ -7,9 +8,7 @@ export default function NavigationBar() {
     <header>
       <Container>
         <nav className={classes.nav}>
-          <Link href={'/'} className={classes.navLogo}>
-            Next Blog
-          </Link>
+          <Logo />
           <ul className={classes.navItems}>
             <li>
               <Link href={'/blog-posts'} className={classes.navItem}>
