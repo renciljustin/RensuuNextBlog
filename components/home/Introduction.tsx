@@ -12,7 +12,7 @@ export default function Introduction() {
             src={'/images/introduction.jpg'}
             alt={'My profile'}
             height={700}
-            width={500}
+            width={800}
             className={classes.displayPhoto}
           />
           <div>
