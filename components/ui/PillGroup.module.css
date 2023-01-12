@@ -1,5 +1,6 @@
 .group {
   display: flex;
-  gap: 0.25rem;
   flex-wrap: wrap;
+  gap: 0.25rem;
+  justify-content: center;
 }

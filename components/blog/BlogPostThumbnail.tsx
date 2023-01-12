@@ -17,7 +17,7 @@ export default function BlogPostThumbnail({ post }: { post: PostData }) {
       <div className={classes.details}>
         <PillGroup>
           {post.tags.map((tag) => (
-            <Pill key={tag} label={'#' + tag} />
+            <Pill key={tag} label={'#' + tag} destination={'/'} />
           ))}
         </PillGroup>
         <h3 className={classes.title}>{post.title}</h3>
