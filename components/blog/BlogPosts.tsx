@@ -13,7 +13,7 @@ export default function BlogPosts({ blogPosts }: { blogPosts: PostData[] }) {
       <Container>
         <div className={classes.blogPosts}>
           {blogPosts.map((post) => (
-            <div key={post.slug}>
+            <div key={post.slug} className={classes.thumbnail}>
               <BlogPostThumbnail post={post} />
               <div className={classes.divider}></div>
             </div>

@@ -7,6 +7,10 @@
   height: 1rem;
 }
 
+.thumbnail:last-child > .divider {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .divider {
     display: none;
