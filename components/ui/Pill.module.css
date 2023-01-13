@@ -6,3 +6,7 @@
   padding: 0.15rem 0.75rem;
   text-decoration: none;
 }
+
+.pill:hover {
+  text-decoration: underline;
+}
