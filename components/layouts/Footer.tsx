@@ -71,7 +71,7 @@ export default function Footer() {
         routes: postCategoriesData.map((data: any) => {
           return {
             title: data,
-            destination: `/blog-posts/categories/${data.slug}`,
+            destination: `/blog-posts/categories/${data}`,
           };
         }),
       };
