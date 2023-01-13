@@ -9,6 +9,11 @@
   --link-color: #888;
 }
 
+::selection {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
 * {
   box-sizing: border-box;
 }
