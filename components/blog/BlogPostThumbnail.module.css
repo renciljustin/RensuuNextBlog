@@ -1,3 +1,12 @@
+.container {
+  border: 1px solid var(--fluid-color);
+  transition: background-color 0.35s;
+}
+
+.container:hover {
+  background-color: var(--fluid-color);
+}
+
 .photo {
   height: auto;
   margin-bottom: 0.5rem;
@@ -7,6 +16,15 @@
 
 .details {
   padding: 0 1rem 1rem 1rem;
+}
+
+.link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
 
 .title {
