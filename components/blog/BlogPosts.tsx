@@ -4,12 +4,17 @@ import BlogPostThumbnail from './BlogPostThumbnail';
 import classes from './BlogPosts.module.css';
 import { PostData } from '../../data/models/post-data';
 
-export default function BlogPosts({ blogPosts }: { blogPosts: PostData[] }) {
+export default function BlogPosts({
+  title,
+  description,
+  blogPosts,
+}: {
+  title: string;
+  description: string;
+  blogPosts: PostData[];
+}) {
   return (
-    <Section
-      title="My Latest Blog"
-      description="Allow me to share you some of my latest discoveries"
-    >
+    <Section title={title} description={description}>
       <Container>
         <div className={classes.blogPosts}>
           {blogPosts.map((post) => (
