@@ -1,0 +1,70 @@
+.footer {
+  color: #fff;
+  display: grid;
+  font-size: 0.75rem;
+  gap: 1rem;
+  padding: 1.5rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.footer p,
+.footer address {
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.newsletter {
+  text-align: center;
+}
+
+.txtEmail {
+  border: 2px solid var(--primary-color);
+  display: block;
+  font-size: 1rem;
+  margin: 1rem auto 0.5rem auto;
+  max-width: 300px;
+  outline: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.btnSubscribe {
+  background-color: var(--primary-color);
+  display: block;
+  border: 0;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 0.5rem 0;
+  outline: 0;
+  width: 100%;
+}
+
+.copyrights {
+  background-color: var(--darkest-color);
+  font-size: 0.75rem;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

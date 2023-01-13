@@ -2,36 +2,33 @@ import Link from 'next/link';
 import Pill from '../ui/Pill';
 import PillGroup from '../ui/PillGroup';
 import classes from './QuickLinks.module.css';
+import { QuickLinksType, QuickLinksUI } from './QuickLinksUI';
 
 export default function QuickLinks({
-  title,
-  type,
-  links,
+  quickLinks,
 }: {
-  title: string;
-  type: string;
-  links: { text: string; destination: string }[];
+  quickLinks: QuickLinksUI;
 }) {
   return (
     <section className={classes.container}>
-      <h4 className={classes.title}>{title}</h4>
-      {type === 'link' &&
-        links.map((link) => (
+      <h4 className={classes.title}>{quickLinks.title}</h4>
+      {quickLinks.type === QuickLinksType.Link &&
+        quickLinks.routes.map((route) => (
           <Link
-            href={link.destination}
+            href={route.destination}
             className={classes.link}
-            key={link.text}
+            key={route.title}
           >
-            {link.text}
+            {route.title}
           </Link>
         ))}
-      {type === 'pills' && (
+      {quickLinks.type === QuickLinksType.Pill && (
         <PillGroup>
-          {links.map((link) => (
+          {quickLinks.routes.map((route) => (
             <Pill
-              key={link.text}
-              label={'#' + link.text}
-              destination={link.destination}
+              key={route.title}
+              label={'#' + route.title}
+              destination={route.destination}
             />
           ))}
         </PillGroup>

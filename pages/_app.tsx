@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app';
 import Layout from '../components/layouts/Layout';
 import localFont from '@next/font/local';
 import NavigationBar from '../components/layouts/NavigationBar';
+import Footer from '../components/layouts/Footer';
 
 // TODO: Try to apply the NEXT way of configuring custom fonts.
 // const inter = localFont({
@@ -59,6 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
       `}</style> */}
       <NavigationBar />
       <Component {...pageProps} />
+      <Footer />
     </Layout>
   );
 }
