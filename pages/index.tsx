@@ -3,6 +3,8 @@ import { Fragment } from 'react';
 import BlogPosts from '../components/blog/BlogPosts';
 import Hero from '../components/home/Hero';
 import Introduction from '../components/home/Introduction';
+import Container from '../components/layouts/Container';
+import Section from '../components/layouts/Section';
 import { PostData } from '../data/models/post-data';
 import { getAllPosts, getFeaturedPosts } from '../lib/utils/posts-util';
 
@@ -11,11 +13,14 @@ export default function HomePage({ posts }: { posts: PostData[] }) {
     <Fragment>
       <Hero />
       <Introduction />
-      <BlogPosts
+      <Section
         title="My Latest Blogs"
         description="Allow me to share you some of my latest discoveries"
-        blogPosts={posts}
-      />
+      >
+        <Container>
+          <BlogPosts blogPosts={posts} />
+        </Container>
+      </Section>
     </Fragment>
   );
 }

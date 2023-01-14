@@ -5,26 +5,25 @@ import classes from './BlogPosts.module.css';
 import { PostData } from '../../data/models/post-data';
 
 export default function BlogPosts({
-  title,
-  description,
   blogPosts,
+  columns = 4,
 }: {
-  title: string;
-  description: string;
   blogPosts: PostData[];
+  columns?: number;
 }) {
   return (
-    <Section title={title} description={description}>
-      <Container>
-        <div className={classes.blogPosts}>
-          {blogPosts.map((post) => (
-            <div key={post.slug} className={classes.thumbnail}>
-              <BlogPostThumbnail post={post} />
-              <div className={classes.divider}></div>
-            </div>
-          ))}
+    <div
+      className={[
+        classes.blogPosts,
+        columns == 2 ? classes.col2 : classes.col4,
+      ].join(' ')}
+    >
+      {blogPosts.map((post) => (
+        <div key={post.slug} className={classes.thumbnail}>
+          <BlogPostThumbnail post={post} />
+          <div className={classes.divider}></div>
         </div>
-      </Container>
-    </Section>
+      ))}
+    </div>
   );
 }

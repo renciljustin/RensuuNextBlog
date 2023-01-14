@@ -18,12 +18,19 @@
 
   .blogPosts {
     gap: 1rem;
+  }
+
+  .blogPosts.col4 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .blogPosts {
+  .blogPosts.col2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blogPosts.col4 {
     grid-template-columns: repeat(4, 1fr);
   }
 }
