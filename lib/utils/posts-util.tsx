@@ -6,13 +6,14 @@ import { PostData } from '../../data/models/post-data';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
 const postCategories = [
-  'ExpressJS',
-  'Info',
-  'MongoDB',
-  'NextJS',
-  'ReactJS',
-  'Typescript',
-  'Vercel',
+  'expressjs',
+  'info',
+  'javascript',
+  'mongodb',
+  'nextjs',
+  'reactjs',
+  'typescript',
+  'vercel',
 ];
 
 export function getPostsFiles(): string[] {
@@ -91,6 +92,14 @@ export function getFeaturedPosts(): PostData[] {
   const allPosts = getAllPosts();
 
   const filteredPosts = allPosts.filter((post) => post.isFeatured);
+
+  return filteredPosts;
+}
+
+export function getPostsByCategory(category: string): PostData[] {
+  const allPosts = getAllPosts();
+
+  const filteredPosts = allPosts.filter((post) => post.tags.includes(category));
 
   return filteredPosts;
 }
