@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import Container from '../layouts/Container';
-import Section from '../layouts/Section';
 import classes from './Hero.module.css';
 import Typewriter from 'typewriter-effect';
 
@@ -17,25 +15,21 @@ export default function Hero() {
     />
   );
   return (
-    <Section>
-      <Container>
-        <Image
-          src={'/images/profile.jpg'}
-          alt={'My profile'}
-          height={300}
-          width={300}
-          className={classes.profilePhoto}
-        />
-        <div className={classes.circles}>
-          <div
-            className={[classes.circle, classes.circleGreen].join(' ')}
-          ></div>
-        </div>
-        <h1 className={classes.greetings}>
-          Hi I&apos;m RJ.&nbsp;
-          <span className={classes.typewriter}>{typewriter}</span>
-        </h1>
-      </Container>
-    </Section>
+    <>
+      <Image
+        src={'/images/profile.jpg'}
+        alt={'My profile'}
+        height={300}
+        width={300}
+        className={classes.profilePhoto}
+      />
+      <div className={classes.circles}>
+        <div className={[classes.circle, classes.circleGreen].join(' ')}></div>
+      </div>
+      <h1 className={classes.greetings}>
+        Hi I&apos;m RJ.&nbsp;
+        <span className={classes.typewriter}>{typewriter}</span>
+      </h1>
+    </>
   );
 }

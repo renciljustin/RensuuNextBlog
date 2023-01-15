@@ -6,18 +6,27 @@ import Introduction from '../components/home/Introduction';
 import Container from '../components/layouts/Container';
 import Section from '../components/layouts/Section';
 import { PostData } from '../data/models/post-data';
-import { getAllPosts, getFeaturedPosts } from '../lib/utils/posts-util';
+import { getAllPosts } from '../lib/utils/posts-util';
+import classes from './HomePage.module.css';
 
 export default function HomePage({ posts }: { posts: PostData[] }) {
   return (
     <Fragment>
-      <Hero />
-      <Introduction />
+      <Section>
+        <Container className={classes.noPadding}>
+          <Hero />
+        </Container>
+      </Section>
+      <Section>
+        <Container className={classes.noPadding}>
+          <Introduction />
+        </Container>
+      </Section>
       <Section
         title="My Latest Blogs"
         description="Allow me to share you some of my latest discoveries"
       >
-        <Container>
+        <Container className={classes.noPadding}>
           <BlogPosts blogPosts={posts} />
         </Container>
       </Section>
@@ -32,5 +41,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       posts: filteredPosts,
     },
+    revalidate: 1800,
   };
 };
