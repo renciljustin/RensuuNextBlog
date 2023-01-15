@@ -1,5 +1,11 @@
 import classes from './Container.module.css';
 
-export default function Container({ children }: React.PropsWithChildren) {
-  return <div className={classes.container}>{children}</div>;
+export default function Container({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <div className={`${classes.container} ${className}`}>{children}</div>;
 }
