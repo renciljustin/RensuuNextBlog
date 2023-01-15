@@ -131,6 +131,11 @@ h6 {
   }
 }
 
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
 .bgDark {
   background-color: var(--darkest-color);
 }
