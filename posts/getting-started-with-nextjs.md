@@ -4,7 +4,7 @@ date: '2022-10-16'
 image: cover.jpg
 excerpt: NextJS is a React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR.
 author: 'John Doe'
-tags: ['NextJS', 'React', 'Typescript']
+tags: ['nextjs', 'react', 'typescript']
 isFeatured: true
 ---
 
