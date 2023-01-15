@@ -63,6 +63,16 @@ function getFileContent(filePath: string) {
   return fileContent;
 }
 
+export function getAllPostIds(): string[] {
+  const postFiles = getPostsFiles();
+
+  const slugs = postFiles.map((postFile) => {
+    return getPostSlug(postFile);
+  });
+
+  return slugs;
+}
+
 export function getAllPosts(): PostData[] {
   const postFiles = getPostsFiles();
 

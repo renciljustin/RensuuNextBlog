@@ -1,35 +1,13 @@
 ---
 title: 'Typescript over Javascript for React. WHY?'
 date: '2022-12-20'
-image: typescript-over-javascript.jpg
+image: cover.jpg
 excerpt: Here are some reasons why you should migrate your Javascript code into Typescript.
 author: 'John Doe'
 tags: ['Javascript', 'React', 'Typescript']
 isFeatured: true
 ---
 
-NextJS is a **framework for ReactJS**.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, necessitatibus expedita saepe qui quibusdam exercitationem fugit facere, ducimus nostrum eveniet reiciendis, non molestiae ratione obcaecati explicabo perspiciatis quis nihil nesciunt neque. Facere perspiciatis repellendus placeat illum deleniti accusantium? Modi numquam explicabo molestias exercitationem quas nesciunt id soluta corporis consequatur ipsum.
 
-Wait a second ... a "framework" for React? Isn't React itself already a framework for JavaScript?
-
-Well ... first of all, React is a "library" for JavaScript. That seems to be important for some people.
-
-Not for me, but still, there is a valid point: React already is a framework / library for JavaScript. So it's already an extra layer on top of JS.
-
-## Why would we then need NextJS?
-
-Because NextJS makes building React apps easier - especially React apps that should have server-side rendering (though it does way more than just take care of that).
-
-In this article, we'll dive into the core concepts and features NextJS has to offer:
-
-- File-based Routing
-- Built-in Page Pre-rendering
-- Rich Data Fetching Capabilities
-- Image Optimization
-- Much More
-
-## File-based Routing
-
-<!-- ![Create routes via your file + folder structure](nextjs-file-based-routing.png) -->
-
-... More content ...
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, necessitatibus expedita saepe qui quibusdam exercitationem.

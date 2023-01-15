@@ -10,7 +10,7 @@ export default function BlogPostThumbnail({ post }: { post: PostData }) {
     <div className={classes.container}>
       <Link href={`/blog-posts/${post.slug}`}>
         <Image
-          src={`/images/blogs/${post.image}`}
+          src={`/images/posts/${post.slug}/${post.image}`}
           alt={'My profile'}
           height={225}
           width={400}
