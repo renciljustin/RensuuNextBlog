@@ -29,8 +29,8 @@ export default function Footer() {
         destination: '/about',
       },
       {
-        title: 'Contact',
-        destination: '/contact',
+        title: 'Courses',
+        destination: '/courses',
       },
     ],
   };
