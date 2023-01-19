@@ -1,0 +1,15 @@
+.link {
+  background-color: var(--primary-color);
+  border: 0;
+  color: #fff;
+  display: block;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  max-width: 350px;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 0;
+  width: 100%;
+}
