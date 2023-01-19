@@ -1,0 +1,78 @@
+.card {
+  background-color: #000;
+  line-height: 0;
+  position: relative;
+}
+
+.image {
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.overlay {
+  left: 50%;
+  line-height: 1.15;
+  margin: 0;
+  opacity: 0;
+  padding: 1.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 1;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.description {
+  color: #fff;
+  text-align: center;
+}
+
+.card:hover .image {
+  opacity: 0.35;
+  transition: opacity 0.35s;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+  transition: opacity 0.65s;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .image.tall {
+    height: 768px;
+  }
+
+  .image {
+    height: 360px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+}

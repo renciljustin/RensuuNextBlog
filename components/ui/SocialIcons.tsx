@@ -1,9 +1,4 @@
-import {
-  AiFillFacebook,
-  AiFillGithub,
-  AiFillFileUnknown,
-  AiFillLinkedin,
-} from 'react-icons/ai';
+import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import classes from './SocialIcons.module.css';
 
 export default function SocialIcons() {
