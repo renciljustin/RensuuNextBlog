@@ -1,0 +1,58 @@
+.container {
+  border: 1px solid var(--fluid-color);
+  padding: 1.5rem 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.container:hover {
+  background-color: var(--fluid-color);
+  transition: background-color 0.35s;
+}
+
+.container:hover .image {
+  transform: scale(1.1);
+  transition: transform 0.35s ease;
+}
+
+.image {
+  font-size: 6rem;
+  line-height: 0;
+  margin: 0;
+}
+
+.title {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.description {
+  margin-bottom: 3rem;
+}
+
+.videoCount {
+  bottom: 1.5rem;
+  color: var(--link-color);
+  left: 1rem;
+  position: absolute;
+}
+
+.videoCount::after {
+  content: ' videos';
+}
+
+.length {
+  bottom: 1.5rem;
+  color: var(--link-color);
+  right: 1rem;
+  position: absolute;
+}
+
+.length::after {
+  content: ' hours';
+}

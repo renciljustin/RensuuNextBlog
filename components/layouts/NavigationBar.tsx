@@ -21,8 +21,8 @@ export default function NavigationBar() {
               </Link>
             </li>
             <li>
-              <Link href={'/contact'} className={classes.navItem}>
-                Contact
+              <Link href={'/courses'} className={classes.navItem}>
+                Courses
               </Link>
             </li>
           </ul>
