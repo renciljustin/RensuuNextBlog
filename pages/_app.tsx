@@ -52,6 +52,9 @@ export default function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Welcome to my Next Blog website. Discover new knowledge and hone your skill as a Developer by reading my great blogs and watching my amazing courses for FREE!"
         />
+        <meta charSet="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Layout>
         {/* <style jsx global>{`
