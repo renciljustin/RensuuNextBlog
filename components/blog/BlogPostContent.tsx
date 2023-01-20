@@ -39,7 +39,7 @@ export default function BlogPostContent({ post }: { post: PostData }) {
       const { className, children } = code;
       const language = className.split('-')[1];
       return (
-        <SyntaxHighlighter style={atomDark} language={language}>
+        <SyntaxHighlighter style={atomDark} language={language} wrapLongLines>
           {children}
         </SyntaxHighlighter>
       );
