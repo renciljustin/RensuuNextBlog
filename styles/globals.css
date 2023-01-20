@@ -68,10 +68,6 @@ body {
   font-style: normal;
 }
 
-html {
-  font-size: 0.75rem;
-}
-
 h1,
 h2,
 h3,
@@ -82,59 +78,32 @@ h6 {
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   font-weight: 600;
 }
-
-h1 {
-  font-size: 2.75rem;
-}
-
-h2 {
-  font-size: 2.25rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.25rem;
-}
-
-h5 {
+html {
   font-size: 1rem;
 }
 
-h6 {
-  font-size: 0.75rem;
+h1 {
+  font-size: 3rem;
 }
 
-@media screen and (min-width: 1024px) {
-  html {
-    font-size: 1rem;
-  }
+h2 {
+  font-size: 2.5rem;
+}
 
-  h1 {
-    font-size: 3rem;
-  }
+h3 {
+  font-size: 2rem;
+}
 
-  h2 {
-    font-size: 2.5rem;
-  }
+h4 {
+  font-size: 1.5rem;
+}
 
-  h3 {
-    font-size: 2rem;
-  }
+h5 {
+  font-size: 1.25rem;
+}
 
-  h4 {
-    font-size: 1.5rem;
-  }
-
-  h5 {
-    font-size: 1.25rem;
-  }
-
-  h6 {
-    font-size: 1rem;
-  }
+h6 {
+  font-size: 1rem;
 }
 
 a {

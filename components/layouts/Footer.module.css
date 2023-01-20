@@ -1,7 +1,6 @@
 .footer {
   color: #fff;
   display: grid;
-  font-size: 0.75rem;
   gap: 1rem;
   padding: 1.5rem 1rem 1rem 1rem;
   text-align: center;
@@ -51,7 +50,6 @@
 
 .copyrights {
   background-color: var(--darkest-color);
-  font-size: 0.75rem;
   padding: 1rem 0;
   text-align: center;
   text-transform: uppercase;

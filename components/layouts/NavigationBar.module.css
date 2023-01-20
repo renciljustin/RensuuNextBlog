@@ -3,6 +3,7 @@
   display: grid;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   grid-template-columns: none;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
