@@ -4,6 +4,8 @@ import Layout from '../components/layouts/Layout';
 import localFont from '@next/font/local';
 import NavigationBar from '../components/layouts/NavigationBar';
 import Footer from '../components/layouts/Footer';
+import { Fragment } from 'react';
+import Head from 'next/head';
 
 // TODO: Try to apply the NEXT way of configuring custom fonts.
 // const inter = localFont({
@@ -43,8 +45,16 @@ import Footer from '../components/layouts/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      {/* <style jsx global>{`
+    <Fragment>
+      <Head>
+        <title>Next Blog</title>
+        <meta
+          name="description"
+          content="Welcome to my Next Blog website. Discover new knowledge and hone your skill as a Developer by reading my great blogs and watching my amazing courses for FREE!"
+        />
+      </Head>
+      <Layout>
+        {/* <style jsx global>{`
         html {
           font-family: ${inter.style.fontFamily};
         }
@@ -58,9 +68,10 @@ export default function App({ Component, pageProps }: AppProps) {
           font-family: ${sofiaSansExtraCondensed.style.fontFamily};
         }
       `}</style> */}
-      <NavigationBar />
-      <Component {...pageProps} />
-      <Footer />
-    </Layout>
+        <NavigationBar />
+        <Component {...pageProps} />
+        <Footer />
+      </Layout>
+    </Fragment>
   );
 }

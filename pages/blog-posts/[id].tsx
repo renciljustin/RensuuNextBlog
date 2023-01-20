@@ -2,6 +2,7 @@ import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
 import Head from 'next/head';
 import { Fragment } from 'react';
 import BlogPostContent from '../../components/blog/BlogPostContent';
+import SharePost from '../../components/blog/SharePost';
 import Container from '../../components/layouts/Container';
 import QuickLinksPanel from '../../components/layouts/QuickLinksPanel';
 import Section from '../../components/layouts/Section';
@@ -19,7 +20,10 @@ export default function BlogPostDetail({ post }: { post: PostData }) {
       <Section>
         <Container>
           <div className={classes.container}>
-            <BlogPostContent post={post} />
+            <div>
+              <BlogPostContent post={post} />
+              <SharePost />
+            </div>
             <QuickLinksPanel />
           </div>
         </Container>
