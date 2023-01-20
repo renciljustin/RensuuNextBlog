@@ -57,5 +57,6 @@
 @media screen and (min-width: 768px) {
   .title {
     text-align: left;
+    font-size: 2rem;
   }
 }
