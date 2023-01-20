@@ -3,12 +3,7 @@
   padding: 1.5rem 1rem;
   position: relative;
   text-align: center;
-}
-
-.container::after {
-  content: '';
-  clear: both;
-  display: table;
+  caret-color: transparent;
 }
 
 .container:hover {
