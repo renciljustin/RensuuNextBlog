@@ -4,7 +4,7 @@ date: '2022-12-20'
 image: cover.jpg
 excerpt: Here are some reasons why you should migrate your Javascript code into Typescript.
 author: 'John Doe'
-tags: ['javascript', 'react', 'typescript']
+tags: ['javascript', 'reactjs', 'typescript']
 isFeatured: true
 ---
 
