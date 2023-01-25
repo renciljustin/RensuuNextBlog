@@ -1,3 +1,3 @@
-# This is a simple blog project made with React/ Next.js
+# This is a simple demo Blogfolio website  made with React/ Next.js
 
-[See Demo](https://example.com/)
+[See Live Demo](https://rj-next-blog.vercel.app/)
